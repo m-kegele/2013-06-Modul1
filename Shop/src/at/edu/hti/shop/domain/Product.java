@@ -2,11 +2,10 @@ package at.edu.hti.shop.domain;
 
 public class Product {
 	private String name;
-	private long id;
-	private double prize;
-	
+	private Long id;
+	private Double prize;
 
-	public Product( long id, String name, double prize) {
+	public Product(Long id, String name, Double prize) {
 		super();
 		this.name = name;
 		this.id = id;
@@ -21,7 +20,7 @@ public class Product {
 		return id;
 	}
 
-	public double getPrize() {
+	public Double getPrize() {
 		return prize;
 	}
 

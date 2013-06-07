@@ -2,9 +2,9 @@ package at.edu.hti.shop.domain;
 
 public class OrderLine {
 	private Product product;
-	private int amount;
+	private Integer amount;
 
-	public OrderLine(Product product, int amount) {
+	public OrderLine(Product product, Integer amount) {
 		super();
 		this.product = product;
 		this.amount = amount;
@@ -14,7 +14,7 @@ public class OrderLine {
 		return amount;
 	}
 
-	public void setAmount(int amount) {
+	public void setAmount(Integer amount) {
 		this.amount = amount;
 	}
 
@@ -22,14 +22,13 @@ public class OrderLine {
 		return product;
 	}
 
-	public double calcPrize()
-	{
-		return amount*product.getPrize();
+	public Double calcPrize() {
+		return amount * product.getPrize();
 	}
 
 	@Override
 	public String toString() {
 		return "OrderLine [" + product + ", " + amount + "]";
 	}
-	
+
 }
